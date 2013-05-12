@@ -20,16 +20,14 @@
 # http://www.putlocker.com/file/83C174C844583CF7
 
 import re
-
 from module.plugins.internal.SimpleHoster import SimpleHoster
-
 
 class PutlockerCom(SimpleHoster):
     __name__ = "PutlockerCom"
     __type__ = "hoster"
-    __pattern__ = r'http://(www\.)?putlocker\.com/(file|embed)/[A-Z0-9]+'
-    __version__ = "0.25"
-    __description__ = """Putlocker.Com"""
+    __pattern__ = r'http://(:?www\.)?(:?putlocker|sockshare)\.com/(file|embed)/[A-Z0-9]+'
+    __version__ = "0.26"
+    __description__ = """Hoster plugin for putlocker.com and sockshare.com since they are very similar."""
     __author_name__ = ("jeix", "stickell")
     __author_mail__ = ("l.stickell@yahoo.it")
 
